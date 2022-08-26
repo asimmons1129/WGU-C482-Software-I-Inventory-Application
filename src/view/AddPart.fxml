@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="547.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartController">
+   <children>
+      <Label layoutX="51.0" layoutY="76.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inhouseradio" layoutX="182.0" layoutY="81.0" mnemonicParsing="false" onAction="#onClickInHouse" selected="true" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outsourcedradio" layoutX="328.0" layoutY="81.0" mnemonicParsing="false" onAction="#onClickOutsourced" text="Outsourced" toggleGroup="$type" />
+      <Label layoutX="59.0" layoutY="142.0" text="ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partidtextfield" disable="true" layoutX="182.0" layoutY="139.0" promptText="Auto Gen- Disabled">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partnametextfield" layoutX="182.0" layoutY="182.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partinventorytextfield" layoutX="182.0" layoutY="226.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partpricetextfield" layoutX="182.0" layoutY="274.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partmaxtextfield" layoutX="182.0" layoutY="319.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idornametextfield" layoutX="182.0" layoutY="359.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partmintextfield" layoutX="417.0" layoutY="319.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="185.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="229.0" text="Inv">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="277.0" text="Price/Cost">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="322.0" text="Max">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="radioLabelSwitch" layoutX="55.0" layoutY="362.0" text="Machine ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="322.0" text="Min">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="346.0" layoutY="426.0" mnemonicParsing="false" onAction="#onClickSave" text="Save" />
+      <Button layoutX="417.0" layoutY="426.0" mnemonicParsing="false" onAction="#onClickCancel" text="Cancel" />
+   </children>
+</AnchorPane>
